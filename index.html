@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Flashcards App</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="add-card-con">
+            <button id="add-card">Add New Card</button>
+        </div>
+
+        <div class="cards-list">
+            <div class="card">
+                <p class="q-div">Question</p>
+                <p class="a-div">Answer</p>
+                <button class="show-hide-btn">Show/Hide</button>
+                <div class="btns-con">
+                    <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <p class="q-div">Question</p>
+                <p class="a-div">Answer</p>
+                <button class="show-hide-btn">Show/Hide</button>
+                <div class="btns-con">
+                    <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <p class="q-div">Question</p>
+                <p class="a-div">Answer</p>
+                <button class="show-hide-btn">Show/Hide</button>
+                <div class="btns-con">
+                    <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal" id="add-card-modal">
+            <h2>Add Flashcard</h2>
+            <div class="wrapper">
+                <div class="error-con">
+                    <span class="hide" id="error">
+                       Input something since it cannot be empty 
+                    </span>
+                </div>
+                <i class="fa-solid fa-xmark" id="close-btn"></i>
+            </div>
+            <label for="question">Question:</label>
+            <textarea class="input" id="question" placeholder="Type the question here..." rows="3"></textarea>
+            <label for="Answer">Answer:</label>
+            <textarea class="input" id="answer" placeholder="Type the answer here..." rows="4"></textarea>
+            <button id="save-btn">Save</button>
+        </div>
+    </div>
+
+
+    <script src="script.jss"></script>
+</body>
+</html>
