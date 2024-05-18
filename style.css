@@ -31,7 +31,8 @@ button{
     transition: all 0.3s ease;
 }
 
-.add-card-con button{
+.add-card-con button,
+.modal button{
     font-size: 15px;
     background-color: rgb(53, 114, 245);
     padding: 10px 20px;
@@ -145,3 +146,54 @@ label{
     margin-bottom: 8px;
 }
 
+textarea{
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+textarea:not(:last-child){
+    margin-bottom: 18px;
+}
+
+textarea:focus{
+    border-color: #202020;
+}
+
+.hide{
+    display: none;
+}
+
+.add-card-con button:hover,
+.modal button:hover,
+#close-btn:hover,
+.show-hide-btn:hover{
+    background-color: rgba(13, 69, 190, 0.945);
+}
+
+@media screen and (max-width: 800px) {
+    
+    body{
+        padding: 10px 0 30px;
+    }
+
+    .card{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    
+    body{
+        font-size: 14px;
+        overflow-y: scroll;
+    }
+
+    .card{
+        width: 100%;
+    }
+}
